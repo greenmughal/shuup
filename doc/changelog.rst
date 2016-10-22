@@ -12,17 +12,31 @@ Unrealeased
 Core
 ~~~~
 
+- Populate some unfilled customer fields from order
+
 Localization
 ~~~~~~~~~~~~
 
 Admin
 ~~~~~
 
+- Add mass actions to products list
+- Add mass actions to orders list
+- Add mass actions to contacts list
+- Picotable lists now support mass actions.
+
 Addons
 ~~~~~~
 
 Front
 ~~~~~
+
+- Enable option to use login and regiser checkout phases 
+  with vertical checkout process
+- Add checkout view with option to login and register
+- Add is_visible_for_user method for checkout view phase
+- Add recently viewed products app
+- Fix/refactor single page checkout view
 
 Xtheme
 ~~~~~~
@@ -71,6 +85,7 @@ Released on 2016-10-12 09:30pm -0800.
 Core
 ~~~~
 
+- Fetch support id for shops sending telemetry
 - Remove shop languages, category, tax class, service provider and services
   default record creation from `shuup_init` management command
 
@@ -86,6 +101,9 @@ Admin
 Front
 ~~~~~
 
+- For search add default sorting based on distance between product
+  name and query string
+- Add results from words in query to the search until the limit is reached
 - Enable filtering product lists by price
 - Enable option to filter products with variation values
 - Enable option to modify products queryset in category
@@ -94,7 +112,7 @@ Front
 - Add option to sort products by date created
 - Change the way product order boxes are being rendered in front.
   Note: This causes backwards incompatibility with templates, so
-  fix your templates before upgrading into this version. 
+  fix your templates before upgrading into this version.
 - Add option to filter product lists by category
 - Configure category and search sorts and filters.
     - Add option to configure category sorts and filters

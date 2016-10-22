@@ -89,7 +89,7 @@ REQUIRES = [
     'django-polymorphic>=0.8.0,<0.10',
     'django-registration-redux>=1.2,<2',
     'django-timezone-field>=1.2,<2',
-    'djangorestframework>=3.1,<4',
+    'djangorestframework>=3.1,<3.5',
     'factory-boy>=2.5,<3',
     'fake-factory>=0.5.0,<0.5.4',
     'Jinja2>=2.8,<3',
@@ -118,6 +118,7 @@ EXTRAS_REQUIRE = {
     'testing': utils.get_test_requirements_from_tox_ini(TOPDIR),
     'coding-style': [
         'flake8>=2.4,<3',
+        'flake8-print>=2.0.2,<3',
         'pep8-naming>=0.2,<1',
     ],
 }
